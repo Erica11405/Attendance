@@ -1,3 +1,6 @@
+<?php
+    $conn = new mysqli('localhost', 'root', '', 'student_attendance_db');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
