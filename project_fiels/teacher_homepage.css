@@ -36,7 +36,7 @@ body {
         cursor: pointer;
     }
 }  
-.sub-options button {
+/* .sub-options button {
     width: 80%;
     padding: 10px;
     margin: 5px 20px;
@@ -47,7 +47,7 @@ body {
     cursor: pointer;
     border-left: 10px;
 
-}
+} */
 .main{
     min-height: calc(100vh - 60px);
     background-color: var(--clr-background);
@@ -67,18 +67,14 @@ body {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
+        gap: 200px;
 
 
-        ul{
+        ul, button{
             cursor: pointer;
             list-style: none;
             font-weight: 500;
-
-            li{
-            }
-            li:hover{
-                background-color: #d1d1d1;
-            }
+            font-size: 1rem;
         }
     }
 }
