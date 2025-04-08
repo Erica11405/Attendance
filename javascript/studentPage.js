@@ -1,7 +1,7 @@
 let qrCode = document.getElementById("qr_code");
 let schoolId = document.getElementById("")
 
-qrCode.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + 202300049;
+qrCode.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + document.getElementById("schoolId").textContent;
 
 const open_subject_form =  document.getElementById("add_subject");
 const form = document.querySelector(".full_screen_container");
@@ -94,6 +94,6 @@ function showScheduleToday(subject){
     let schedule_room = document.createElement("td");
     schedule_room.textContent = subject.subject_room;
 
-    schedule_row.append(schedule_name, schedule_time, schedule_room)
+    schedule_row.append(schedule_name, schedule_time, schedule_room);
     schedule_table.append(schedule_row);
 }
